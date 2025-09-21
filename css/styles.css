@@ -647,6 +647,7 @@ font-weight: 500;
 .modal-button-close:hover .modal-button-icon,
 .modal-button-close:focus .modal-button-icon {
     fill: #ffff;
+    border: none;
 }
 
 .modal-title {
@@ -659,9 +660,7 @@ font-weight: 500;
         margin-bottom: 16px;
 }
 
-.modal-label {
-display: block;
-}
+
 
 .modal-form {
 
@@ -682,7 +681,7 @@ display: block;
 .modal-input-icon {
     position: absolute;
     fill: #2e2f42;
-    left: 19px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -726,7 +725,7 @@ display: block;
 }
 
 .modal-label {
-    display: inline-flex;
+    display: block;
 font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -752,6 +751,20 @@ font-weight: 400;
     margin-bottom: 24px;
    
 }
+
+
+.modal-agreement-label {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        
+}
+
+
+
+
 .modal-agreement-wrapper {
     display: flex;
     gap: 8px;
@@ -761,15 +774,32 @@ font-weight: 400;
     height: 16px;
 }
 
-.modal-agreement-text {
+.modal-agreement-custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox:checked+.modal-agreement-label>.modal-agreement-custom-checkbox {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+}
+
+
+/*.modal-agreement-text {
     font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #8e8f99;
-
-        
-}
+        color: #8e8f99;     
+} */
 
 .modal-agreement-link {
     line-height: 1.33;
@@ -809,23 +839,6 @@ background-color:#404bbf;
 }
 
 
-.modal-agreement-custom-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    background-color: transparent;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-checkbox:checked + .modal-agreement-text>.modal-agreement-custom-checkbox {
-    background-color: #404bbf;
-    fill:#f4f4fd;
-}
 
 
 .checkmark-icon {
