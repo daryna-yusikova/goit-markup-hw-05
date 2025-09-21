@@ -490,21 +490,19 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label class="modal-label" for="name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-container">
               <input
                 type="text"
-                name="name"
+                name="user-name"
                 class="modal-input"
-                id="name"
+                id="user-name"
                 required
               />
-              <svg class="modal-input-icon" width="12" height="12">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -519,7 +517,7 @@
                 class="modal-input"
                 required
               />
-              <svg class="modal-input-icon" width="13" height="13">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </div>
@@ -534,16 +532,16 @@
                 class="modal-input"
                 required
               />
-              <svg class="modal-input-icon" width="15" height="12">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="modal-field-textarea">
-            <label class="modal-label" for="message">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              name="message"
-              id="message"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal-textarea"
               rows="4"
@@ -552,8 +550,9 @@
           <div class="modal-field-agreement">
             <input
               type="checkbox"
-              name="agreement"
-              id="agreement"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               class="modal-checkbox visually-hidden"
               required
             />
