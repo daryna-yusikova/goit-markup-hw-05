@@ -641,7 +641,7 @@ font-weight: 500;
 
 .modal-button-close:hover, .modal-button-close:focus {
     background-color: #404bbf;
-    border-width: none;
+    border: none;
 }
 
 .modal-button-close:hover .modal-button-icon,
@@ -790,6 +790,7 @@ font-weight: 400;
 .modal-checkbox:checked+.modal-agreement-label>.modal-agreement-custom-checkbox {
     background-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 
 
@@ -817,7 +818,7 @@ font-weight: 400;
     border-radius: 4px;
     padding-block: 16px;
     padding-inline: 32px;
-    min-width: 169px
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
